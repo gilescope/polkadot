@@ -56,6 +56,7 @@ pub(crate) fn impl_channels_out_struct(info: &OverseerInfo) -> Result<proc_macro
 			)*
 		}
 
+		#[allow(unreachable_code)]
 		impl ChannelsOut {
 			/// Send a message via a bounded channel.
 			pub async fn send_and_log_error(
